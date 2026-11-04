@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+echo "pre-commmit: typecheck..." && npm run typecheck
+echo "pre-commit: testes..." && npm run test

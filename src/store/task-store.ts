@@ -4,7 +4,7 @@ import type { Task, TaskFilter } from "../domain/task.js";
 
 export interface TaskStore {
   create(title: string): Task;
-  list(filter: TaskFilter): Task;
+  list(filter: TaskFilter): Task[];
   getById(id: string): Task;
   complete(id: string): Task;
   remove(id: string): void;
